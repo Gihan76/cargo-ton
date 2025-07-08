@@ -1,8 +1,11 @@
+import { HeaderComp } from "./components/header"
 
 
 function App() {
   return (
-    <>Hello World</>
+    <>
+      <HeaderComp />  
+    </>
   )
 }
 
