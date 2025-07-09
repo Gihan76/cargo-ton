@@ -11,13 +11,18 @@ const clients = [
 
 export const ClientsSection = () => {
     return (
-        <Container>
+        <Box 
+            sx={{
+                px: 4,
+                pt: 2,
+            }}
+        >
             <Typography
-                variant="h5"
+                variant="h4"
                 align="center"
                 sx={{
                     mb: 2,
-                    mt: 1,
+                    mt: 2,
                     fontWeight: "bold",
                     textTransform: 'uppercase',
                     letterSpacing: 1
@@ -49,6 +54,6 @@ export const ClientsSection = () => {
                     </Grid>
                 ))}
             </Grid>
-        </Container>
+        </Box>
     )
 }

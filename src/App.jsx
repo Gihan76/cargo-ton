@@ -1,6 +1,7 @@
 import { ClientsSection } from "./components/ClientsSection/ClientsSection"
 import { CounterSection } from "./components/CounterSection/CounterSection"
 import { HeaderComp } from "./components/header"
+import { LatestNewsSection } from "./components/LatestNewsSection/LatestNewsSection"
 import { ServicesSection } from "./components/ServicesSection/ServicesSection"
 import { Slider } from "./components/Slider"
 import { TestimoniolCombinedSection } from "./components/TestimoniolCombinedSection"
@@ -16,6 +17,7 @@ function App() {
       <CounterSection />
       <TestimoniolCombinedSection />
       <ClientsSection />
+      <LatestNewsSection />
     </>
   )
 }
