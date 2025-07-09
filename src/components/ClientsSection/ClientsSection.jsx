@@ -1,13 +1,5 @@
-import { Box, Typography, Container, Grid } from '@mui/material';
-
-const clients = [
-    { name: 'Apple', logo: 'client-images/apple.png' },
-    { name: 'Google', logo: 'client-images/google.png' },
-    { name: 'Microsoft', logo: 'client-images/microsoft.png' },
-    { name: 'Samsung', logo: 'client-images/samsung.png' },
-    { name: 'Tesla', logo: 'client-images/tesla.png' },
-    { name: 'Twitter', logo: 'client-images/twitter.png' },
-];
+import { Box, Typography, Grid } from '@mui/material';
+import { clients } from '../../config/Constants';
 
 export const ClientsSection = () => {
     return (
@@ -32,7 +24,7 @@ export const ClientsSection = () => {
             </Typography>
 
             <Grid container size={12} sx={{ display: "flex", justifyContent: "space-between", textAlign: "center" }}>
-                {clients.map((client, index) => (
+                {clients?.map((client, index) => (
                     <Grid key={index} size={{ xl: 1, lg: 1, md: 4, sm: 6, xs: 6 }}>
                         <Box
                             component="img"

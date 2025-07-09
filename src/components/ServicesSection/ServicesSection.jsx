@@ -3,29 +3,7 @@ import { useServicesStyles } from './useStyles'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
-const servicesData = [
-    {
-        title: 'Air Freight Services',
-        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
-        image: 'service-images/air-freight.webp',
-    },
-    {
-        title: 'Drone Services',
-        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
-        image: 'service-images/drone-services.webp',
-    },
-    {
-        title: 'Maritime Shipping',
-        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
-        image: 'service-images/maritime-shipping.webp',
-    },
-    {
-        title: 'Ground Transport',
-        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
-        image: 'service-images/ground-transport.webp',
-    }
-];
+import { servicesData } from '../../config/Constants';
 
 export const ServicesSection = () => {
     const styles = useServicesStyles();
@@ -78,7 +56,7 @@ export const ServicesSection = () => {
                         />
                     )}
                 >
-                    {servicesData.map((service, index) => (
+                    {servicesData?.map((service, index) => (
                         <Box key={index} sx={{ p: 1, height: '100%' }}>
                             <Card
                                 sx={{

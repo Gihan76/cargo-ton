@@ -1,21 +1,7 @@
 import { Box, Button, Typography } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-const slides = [
-    {
-        image: "slider-images/slider-1.webp",
-        title: "Best Shipping Partner",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        btnLabel: "DISCOVER MORE",
-    },
-    {
-        image: "slider-images/slider-2.webp",
-        title: "Global Logistics",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        btnLabel: "OUR SERVICES",
-    },
-];
+import { slides } from '../../config/Constants';
 
 export const Slider = () => {
     return (
@@ -27,7 +13,7 @@ export const Slider = () => {
             autoPlay={true}
             interval={3000}
         >
-            {slides.map((slide, index) => (
+            {slides?.map((slide, index) => (
                 <Box key={index} sx={{ position: "relative", height: "80vh" }}>
                     {/* Slider Image */}
                     <Box

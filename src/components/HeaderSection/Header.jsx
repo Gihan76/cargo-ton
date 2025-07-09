@@ -16,9 +16,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CloseIcon from '@mui/icons-material/Close';
-
-const links = ['HOME', 'PAGES', 'TRACKING', 'SERVICES', 'BLOG'];
-const headerButtons = ['GET A QUOTE', 'SIGN IN'];
+import { headerButtons, links } from '../../config/Constants';
 
 export const HeaderComp = () => {
     const [activeLink, setActiveLink] = useState('HOME');
@@ -43,7 +41,7 @@ export const HeaderComp = () => {
                 </IconButton>
             </Box>
             <List>
-                {links.map((item) => (
+                {links?.map((item) => (
                     <ListItem
                         button
                         key={item}
@@ -57,7 +55,7 @@ export const HeaderComp = () => {
                         {['HOME', 'PAGES', 'SERVICES', 'BLOG'].includes(item) && <ArrowDropDownIcon />}
                     </ListItem>
                 ))}
-                {headerButtons.map((item) => (
+                {headerButtons?.map((item) => (
                     <ListItem
                         button
                         key={item}

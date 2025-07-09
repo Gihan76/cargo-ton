@@ -1,28 +1,6 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material'
 import { CounterItem } from './CounterItem'
-
-const counterData = [
-    {
-        target: 890,
-        suffix: "+",
-        label: "Delivered packages",
-    },
-    {
-        target: 137,
-        suffix: "+",
-        label: "Countries Covered",
-    },
-    {
-        target: 740,
-        suffix: "+",
-        label: "Tons of Goods",
-    },
-    {
-        target: 600,
-        suffix: "+",
-        label: "Satisfied Clients",
-    },
-];
+import { counterData } from '../../config/Constants';
 
 export const CounterSection = () => {
     const theme = useTheme();

@@ -2,19 +2,7 @@ import { Box, Typography, Container, useTheme, useMediaQuery } from '@mui/materi
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { TestimonialCard } from './TestimonialCard';
-
-const testimonials = [
-    {
-        quote: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,",
-        name: "John Snow",
-        position: "Commander of North",
-    },
-    {
-        quote: "similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-        name: "Jack Sparrow",
-        position: "Captain of Black Pearl",
-    },
-];
+import { testimonials } from '../../config/Constants';
 
 export const TestimonialSection = () => {
     const theme = useTheme();
@@ -75,7 +63,7 @@ export const TestimonialSection = () => {
                         emulateTouch={true}
                         showIndicators={false}
                     >
-                        {testimonials.map((testimonial, index) => (
+                        {testimonials?.map((testimonial, index) => (
                             <TestimonialCard key={index} testimonial={testimonial} />
                         ))}
                     </Carousel>

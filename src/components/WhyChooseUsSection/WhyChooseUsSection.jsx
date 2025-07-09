@@ -1,17 +1,7 @@
 import { Box, Typography, Container } from '@mui/material';
 import { useState } from 'react';
 import { AccordionItem } from './AccordionItem';
-
-const accordionItems = [
-    {
-        title: "Nam libero tempore, cum soluta nobis est eligendi",
-        description: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-    },
-    {
-        title: "optio cumque nihil impedit quo minus id quod maxime",
-        description: "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."
-    },
-];
+import { accordionItems } from '../../config/Constants';
 
 export const WhyChooseUsSection = () => {
     const [expanded, setExpanded] = useState(null);
@@ -57,7 +47,7 @@ export const WhyChooseUsSection = () => {
 
                 <Box 
                 >
-                    {accordionItems.map((item, index) => (
+                    {accordionItems?.map((item, index) => (
                         <AccordionItem
                             key={index}
                             title={item.title}
