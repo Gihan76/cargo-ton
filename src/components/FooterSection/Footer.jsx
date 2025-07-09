@@ -11,17 +11,15 @@ import {
     TextField,
     Button,
 } from '@mui/material';
-import {
-    PhoneIcon,
-    LocationIcon,
-    FacebookIcon,
-    XIcon,
-    InstagramIcon,
-    YouTubeIcon,
-    LinkedInIcon,
-    ArrowUpwardIcon,
-    KeyboardArrowRightIcon
-} from '@mui/icons-material';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import XIcon from '@mui/icons-material/X';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import LocationPinIcon from '@mui/icons-material/LocationPin';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 const customerServices = [
     { text: 'Support Forums', icon: <KeyboardArrowRightIcon /> },
@@ -136,13 +134,13 @@ export const Footer = () => {
                     </Typography>
 
                     <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                        <PhoneIcon sx={{ mr: 1, color: "#8c98b0" }} />
+                        <LocalPhoneIcon sx={{ mr: 1, color: "#8c98b0" }} />
                         <Typography variant="body1" sx={{ color: "#8c98b0" }}>
                             | <a href='tel:+94114347575' style={{ textDecoration: "none", color: "#8c98b0"}}>(+94) 11 434 7575</a>
                         </Typography>
                     </Box>
                     <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-                        <LocationIcon sx={{ mr: 1, color: "#8c98b0" }} />
+                        <LocationPinIcon sx={{ mr: 1, color: "#8c98b0" }} />
                         <Typography variant="body1" sx={{ color: "#8c98b0" }}>
                             | 42 Lily Ave, Colombo 00600
                         </Typography>
