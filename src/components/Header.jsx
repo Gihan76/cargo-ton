@@ -14,7 +14,6 @@ export const HeaderComp = () => {
 
     return (
         <AppBar
-            position="static"
             sx={{
                 backgroundColor: 'white',
                 color: 'black',
