@@ -1,3 +1,4 @@
+import { ClientsSection } from "./components/ClientsSection/ClientsSection"
 import { CounterSection } from "./components/CounterSection/CounterSection"
 import { HeaderComp } from "./components/header"
 import { ServicesSection } from "./components/ServicesSection/ServicesSection"
@@ -14,6 +15,7 @@ function App() {
       <ServicesSection />
       <CounterSection />
       <TestimoniolCombinedSection />
+      <ClientsSection />
     </>
   )
 }
