@@ -38,7 +38,7 @@ const newsItems = [
         title: 'ut labore et dolore magna aliqua',
         author: 'Supervisor',
         comments: 32,
-        description: 'dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet',
+        description: 'dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet quod maxime placeat facere possimus',
         image: 'service-images/maritime-shipping.webp',
         isLatest: false
     },

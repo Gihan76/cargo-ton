@@ -50,7 +50,7 @@ export const HeaderComp = () => {
                                     left: 0,
                                     width: activeLink === item ? '100%' : '0',
                                     height: '2px',
-                                    backgroundColor: '#f0b928',
+                                    backgroundColor: '#f9bf04',
                                     transition: 'width 0.3s ease',
                                 },
                                 '&:hover::after': {
