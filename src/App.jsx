@@ -1,3 +1,4 @@
+import { CounterSection } from "./components/CounterSection/CounterSection"
 import { HeaderComp } from "./components/header"
 import { ServicesSection } from "./components/ServicesSection/ServicesSection"
 import { Slider } from "./components/Slider"
@@ -10,6 +11,7 @@ function App() {
       <Slider />
       <WelcomeSection />
       <ServicesSection />
+      <CounterSection />
     </>
   )
 }
