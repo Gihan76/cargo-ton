@@ -34,16 +34,19 @@ export const ServicesSection = () => {
 
     return (
         <>
-            <Container>
+            <Container 
+                sx={{
+                    '.carousel': {
+                        userSelect: 'none',
+                    },
+                }}
+            >
                 <Box sx={styles.header}>
                     <Typography variant="h6" sx={styles.title}>
                         Real Solution, Real Fast!
                     </Typography>
                     <Typography variant="h3" sx={styles.subtitle}>
                         Best Global Logistics Solutions
-                    </Typography>
-                    <Typography variant="body1" sx={styles.description}>
-                        We provide comprehensive logistics solutions tailored to your specific business needs.
                     </Typography>
                 </Box>
 

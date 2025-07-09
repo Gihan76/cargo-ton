@@ -17,10 +17,6 @@ export const useServicesStyles = () => {
             fontWeight: 'bold',
             fontSize: isMobile ? '1.5rem' : '2rem',
         },
-        description: {
-            color: theme.palette.text.secondary,
-            mb: 2,
-        },
         footerText: {
             textAlign: 'center',
             mt: 1,
